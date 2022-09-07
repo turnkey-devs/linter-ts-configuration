@@ -1,0 +1,43 @@
+{
+	"typescript.format.insertSpaceAfterSemicolonInForStatements": false,
+	"typescript.preferences.importModuleSpecifierEnding": "minimal",
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.tsserver.log": "off",
+	"typescript.tsserver.maxTsServerMemory": 2048,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"xo.format.enable": true,
+	"xo.trace.server": "messages",
+	"xo.enable": true,
+	"xo.path": null,
+	"xo.overrideSeverity": "off",
+	"xo.debounce": 0,
+	"xo.options": {},
+	"xo.runtime": null,
+	// "editor.defaultFormatter": "samverschueren.linter-xo",
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnType": true,
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
+		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"editor.formatOnType": true,
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": {
+			"comments": "off",
+			"strings": "off",
+			"other": "off"
+		},
+		"editor.defaultFormatter": "samverschueren.linter-xo"
+	},
+	"editor.tabCompletion": "on",
+	"diffEditor.codeLens": true,
+}

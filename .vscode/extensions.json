@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "samverschueren.linter-xo",
+    "rvest.vs-code-prettier-eslint",
+    "usernamehw.errorlens",
+    "mikestead.dotenv",
+    "aaron-bond.better-comments",
+    "stevencl.addDocComments"
+  ]
+}

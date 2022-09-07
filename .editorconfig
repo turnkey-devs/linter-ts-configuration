@@ -1,0 +1,6 @@
+# top-most EditorConfig file
+root = true
+
+[{,**/}*.(ts|js|html|json)]
+charset = utf-8
+end_of_line = lf

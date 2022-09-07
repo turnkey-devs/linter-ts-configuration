@@ -1,0 +1,61 @@
+{
+  "name": "{{SERVICE_NAME}}",
+  "version": "0.0.0-dev",
+  "description": "{{DESCRIPTION}}",
+  "keywords": [
+    "key",
+    "words"
+  ],
+  "homepage": "https://github.com/turnkey-devs",
+  "bugs": {
+    "url": "https://github.com/turnkey-devs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turnkey-devs/{{SERVICE_NAME}}"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "TurnkeyID Dev",
+    "url": "https://turnkey.id/career.html",
+    "email": "developer@turnkey.id"
+  },
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.mjs",
+    "require": "./dist/index.cjs",
+    "types": {
+      "import": "./dist/types/index.d.mts",
+      "require": "./dist/types/index.d.cts"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/types/index.d.mts",
+  "files": [
+    "dist/",
+    "package.json",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "fresh-module": "rm -rf node_modules yarn.lock package-lock.json && npm i --no-save",
+    "prebuild": "rm -r @types dist lib || true",
+    "build": "npx rollup -c rollup.config.ts --configPlugin @rollup/plugin-typescript",
+    "build:pretty": "npx ttsc -p tsconfig.build.json",
+    "buildpack": "(mkdir -p pack || true) && cd pack && npm pack ../",
+    "postbuild": "echo \"do nothing\"",
+    "test": "npx nyc ava",
+    "postinstall": "sh ./postinstall.sh"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier-eslint":  "^15.0.1",
+    "xo": "^0.52.2"
+  },
+  "packageManager": "yarn@3.2.1"
+}
