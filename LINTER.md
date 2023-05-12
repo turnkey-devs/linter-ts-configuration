@@ -85,4 +85,11 @@ pnpm i -g @typescript-eslint/parser@5.54 \
 }
 ```
 
-4. Restart your VSCode
+4. COPY these files:
+
+- `.eslintrc`
+- `.prettierrc`
+- `.editorconfig`
+- `.xo-config.json` (optional)
+
+5. Restart your VSCode

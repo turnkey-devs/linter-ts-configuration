@@ -7,7 +7,7 @@
  "editorconfig": false, // Controls whether or not to look for .editorconfig files and apply their settings.
  "embeddedLanguageFormatting": "auto", // Controls how to format code in embedded languages.
  "endOfLine": "lf", // Sets the line ending style to use for the current file (lf, crlf, or auto)
- "filepath": "", // The path to the file being formatted.
+ // "filepath": "", // The path to the file being formatted.
  "htmlWhitespaceSensitivity": "css", // Controls how to handle whitespace in HTML files.
  "insertPragma": false, // Controls whether or not to insert a special @format marker at the top of the file.
  "jsxSingleQuote": false, // Controls whether or not to use single quotes around JSX attributes.
@@ -21,8 +21,8 @@
   }
  ], // An array of configuration overrides for specific file globs or paths.
  "parser": "typescript", // Specifies which parser to use for code formatting.
- "plugins": [], // An array of plugins to use for code formatting.
- "pluginSearchDirs": [], // An array of directories to search for plugins in addition to the default node_modules directory.
+ // "plugins": [], // An array of plugins to use for code formatting.
+ // "pluginSearchDirs": [], // An array of directories to search for plugins in addition to the default node_modules directory.
  "printWidth": 120, // Specifies the line length that the printer will wrap on.
  "proseWrap": "preserve", // Controls how to handle long lines of text.
  "quoteProps": "as-needed", // Controls when to use quotes around object literal property names.
