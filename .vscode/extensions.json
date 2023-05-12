@@ -1,10 +1,22 @@
 {
   "recommendations": [
-    "samverschueren.linter-xo",
     "rvest.vs-code-prettier-eslint",
-    "usernamehw.errorlens",
-    "mikestead.dotenv",
+    "irongeek.vscode-env",
     "aaron-bond.better-comments",
-    "stevencl.addDocComments"
+    "davidanson.vscode-markdownlint",
+    "redhat.vscode-yaml",
+    "tamasfe.even-better-toml",
+    "shakram02.bash-beautify",
+    "wscats.vue",
+    "meezilla.json",
+    "genieai.chatgpt-vscode",
+    "hb432.prettier-eslint-typescript",
+    "bodil.prettier-toml",
+    "dotenv.dotenv-vscode",
+    "lacroixdavid1.vscode-format-context-menu",
+    "renatorodrigues.json-to-js",
+    "dbaeumer.vscode-eslint",
+    "drknoxy.eslint-disable-snippets",
+    "usernamehw.errorlens"
   ]
 }

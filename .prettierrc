@@ -1,0 +1,44 @@
+{
+ "$schema": "https://json.schemastore.org/prettierrc.json",
+ "arrowParens": "always", // Enforces parentheses around arrow function parameters
+ "bracketSameLine": false, // Controls whether or not to put the opening bracket of an object literal or array on the same line as the first item or put it on its own line.
+ "bracketSpacing": true, // Controls whether or not to add spaces inside brackets.
+ "cursorOffset": -1, // Specifies how many characters before (negative number) or after (positive number) the cursor Prettier should format.
+ "editorconfig": false, // Controls whether or not to look for .editorconfig files and apply their settings.
+ "embeddedLanguageFormatting": "auto", // Controls how to format code in embedded languages.
+ "endOfLine": "lf", // Sets the line ending style to use for the current file (lf, crlf, or auto)
+ "filepath": "", // The path to the file being formatted.
+ "htmlWhitespaceSensitivity": "css", // Controls how to handle whitespace in HTML files.
+ "insertPragma": false, // Controls whether or not to insert a special @format marker at the top of the file.
+ "jsxSingleQuote": false, // Controls whether or not to use single quotes around JSX attributes.
+ "overrides": [
+  {
+   "files": "*.md",
+   "options": {
+    "printWidth": 80,
+    "tabWidth": 2
+   }
+  }
+ ], // An array of configuration overrides for specific file globs or paths.
+ "parser": "typescript", // Specifies which parser to use for code formatting.
+ "plugins": [], // An array of plugins to use for code formatting.
+ "pluginSearchDirs": [], // An array of directories to search for plugins in addition to the default node_modules directory.
+ "printWidth": 120, // Specifies the line length that the printer will wrap on.
+ "proseWrap": "preserve", // Controls how to handle long lines of text.
+ "quoteProps": "as-needed", // Controls when to use quotes around object literal property names.
+ "requirePragma": false, // Controls whether or not to require the special @format marker at the top of the file in order to trigger formatting.
+ // "rangeEnd": null,
+ // "rangeStart": 0,
+ "semi": false, // Controls whether or not to use semicolons.
+ "semicolon": false, // An alias for the "semi" property.
+ "singleAttributePerLine": false, // Controls whether or not to put each attribute on its own line in JSX elements.
+ "singleQuote": false, // Controls whether or not single quotes are used around string literals
+ "space": true, // Controls whether or not to use spaces instead of tabs.
+ "tabWidth": 2, // Controls how many spaces to use per tab character.
+ "trailingComma": "all", // Controls whether or not trailing commas are used in object literals:
+ // "none" - no trailing commas
+ // "es5" - trailing commas where valid in ES5 (objects, arrays, etc.)
+ // "all" - trailing commas wherever possible (function arguments)
+ "useTabs": false, // An alias for the "space" property that controls whether or not to use tabs instead of spaces.
+ "vueIndentScriptAndStyle": false // Controls whether or not to indent code inside <script> and <style> tags in Vue files.
+}

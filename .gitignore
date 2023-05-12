@@ -1,4 +1,3 @@
-
 # ----DEFAULT NODE IGNORE
 # Logs
 logs
@@ -21,9 +20,10 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-.coverage
-coverage
+.coverage/*
+coverage/*
 *.lcov
+!.coverage/lcov.info
 
 # nyc test coverage
 .nyc_output
@@ -94,11 +94,15 @@ s_graphql.js
 .dynamodb/
 
 # VSCODE, (optional)
-.vscode
+!.vscode
 
 # Package locks
 package-lock.json
 yarn.lock
+.yarn
+
+# Clinic
+.clinic/
 
 # ----DEFAULT NODE IGNORE
 
@@ -106,6 +110,8 @@ yarn.lock
 /@types
 /lib
 /dist
+dist
+dist/*
 /build
 .rollup*
 
@@ -115,7 +121,6 @@ storage
 storages
 public
 .deptree
-
 
 # MUST IGNORED
 .ignored
@@ -129,8 +134,15 @@ tests
 .env
 .env*
 
+testpack/dist/
+testpack/package-lock.json
 
 # KEEP KEEP FILES
 !**/.gitkeep
 !**/*.keep
-!package-lock.json
+!**/*gitkeep*
+
+.flaskenv*
+!.env.project
+!.env.vault
+.idea/
