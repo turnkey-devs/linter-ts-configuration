@@ -87,7 +87,7 @@ pnpm i -g @typescript-eslint/parser@5.54 \
 
 4. COPY these files:
 
-- `.eslintrc`
+- Select your preference then change the name to`.eslintrc`
 - `.prettierrc`
 - `.editorconfig`
 - `.xo-config.json` (optional)
